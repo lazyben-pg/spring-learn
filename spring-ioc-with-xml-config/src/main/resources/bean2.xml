@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.lazyben.entity.User">
+        <constructor-arg name="name" value="Ben"/>
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="account" ref="account"/>
+    </bean>
+
+<!--    <bean id="user" class="com.lazyben.entity.User">-->
+<!--        <constructor-arg index="0" value="1"/>-->
+<!--        <constructor-arg index="1" value="bBen"/>-->
+<!--        <constructor-arg index="2" ref="account"/>-->
+<!--    </bean>-->
+
+    <bean id="account" class="com.lazyben.entity.Account">
+        <property name="balance" value="100"/>
+    </bean>
+</beans>
