@@ -14,7 +14,8 @@
         <module>spring-ioc-with-annotation-config</module>
         <module>spring-aop</module>
         <module>spring-mybatis</module>
-        <module>spring-ioc-beanLifeCircle-and-circularDependency</module>
+        <module>spring-ioc-beanLifeCycle-and-circularDependency</module>
+        <module>spring-mvc</module>
     </modules>
 
     <properties>
@@ -29,6 +30,16 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>5.3.19</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>5.3.19</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.13.2.1</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
